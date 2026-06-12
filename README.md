@@ -25,9 +25,3 @@ Press **F9** in-game to open it (configurable in `BepInEx\config\enchor.crowdreq
 2. A .NET SDK 8 (system-wide, or the local `..\dotnet` install).
 3. From this folder: `.\build.ps1` (auto-detects the install, builds, copies the DLL to `BepInEx\plugins`).
 4. To produce the shareable installer zip: `.\make-installer.ps1`.
-
-## Notes
-- Reuses the proven backend from the IMGUI build (`EncoreApi`, `SngExtractor`, `SongPath`, `SimpleJSON`,
-  `Rescan`, `InputBlock`, `FolderPicker`); only the UI layer (`UIController.cs`) is new (uGUI + TextMeshPro).
-- Album art: downloaded jpg → `Texture2D` → `RawImage` scaled by its RectTransform.
-- See `PROGRESS.md` for milestone status and IL2CPP/uGUI implementation notes.
